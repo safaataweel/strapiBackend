@@ -3,7 +3,7 @@
 
 module.exports = {
   /**
-  
+
    * your application is initialized.
    *
    * This gives you an opportunity to extend code.
@@ -23,7 +23,7 @@ module.exports = {
 
     const io = new Server(strapi.server.httpServer, {
       cors: {
-        origin:process.env.FRONTEND_URL || 'http://localhost:5173',
+        origin:process.env.FRONTEND_URL || 'https://frontendpart-faw2.onrender.com',
         methods: ['GET', 'POST'],
         allowedHeaders: ['my-custom-header'],
         credentials: true,
